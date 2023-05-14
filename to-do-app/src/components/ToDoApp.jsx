@@ -3,6 +3,7 @@ import AddTask from "./AddTask"
 import TaskList from "./TaskList"
 import initialTasks from "../reducers/initialTasks"
 import tasksReducer from "../reducers/TasksReducer"
+import { TasksProvider } from "../contexts/TasksContext"
 
 const ToDoApp = () =>{
     const [nextId,setNextId] = useState(3);
@@ -40,9 +41,12 @@ const ToDoApp = () =>{
 
     return(
         <>
-            <h3>Task App Example</h3>
-            <AddTask addTaskHandler={handlerAddTask}/>
-            <TaskList tasks={tasks} changeTaskHandler={handlerChangeTask} deleteTaskHandler={handlerDeleteTask}/>
+            <TasksProvider>
+                <h3>Task App Example</h3>
+                <AddTask addTaskHandler={handlerAddTask}/>
+                <TaskList changeTaskHandler={handlerChangeTask} deleteTaskHandler={handlerDeleteTask}/>
+            </TasksProvider>
+            
         </>
     )
 }

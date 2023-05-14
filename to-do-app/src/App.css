@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  position: relative;
 }
 
 .card {
@@ -11,4 +12,9 @@
 
 .read-the-docs {
   color: #888;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
 }

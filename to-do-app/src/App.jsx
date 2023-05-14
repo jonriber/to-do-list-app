@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 
 function App() {
@@ -6,15 +5,15 @@ function App() {
   return (
     <>
       
-      <h1>Vite + React</h1>
+      <h1>To-do APP with Reducer and Context API</h1>
       <div className="card">
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Check the code at my github repo: <a href='https://github.com/jonriber/to-do-list-app'>HERE</a>
       </p>
+
+      <footer><b>Jonatas Ribeiro</b>.2023#</footer>
     </>
   )
 }
