@@ -5,16 +5,20 @@ const AddTask = () => {
     const 
         taskInputRef = useRef(""),
         dispatch = useTaskDispatch();
+        // tasks = useTaskContext(),
+        // id = getLatestId(tasks); //when is this calculated?
+
 
     function addTask(e){
         e.preventDefault();
-        console.log("RODANDO A FUNCTION DE ADICIONAR $$$$",taskInputRef.current.value)
         dispatch({
-            type:"added",
-            id: 0, 
+            type:"added", 
             text:taskInputRef.current.value,
             used:false
         })
+
+        alert("Tarefa Adicionada com sucesso")
+        taskInputRef.current.value = ""
     }
     return(
         <>

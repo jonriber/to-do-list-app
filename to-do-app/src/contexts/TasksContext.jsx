@@ -10,7 +10,6 @@ export const TasksDispatchContext = createContext(null);
 
 export function TasksProvider({children}){
     const [tasks,dispatch] = useReducer(tasksReducer,[])
-    console.log("tasks Reducer:",tasks)
     return(
         <TasksContext.Provider value={tasks}>
             <TasksDispatchContext.Provider value={dispatch}>

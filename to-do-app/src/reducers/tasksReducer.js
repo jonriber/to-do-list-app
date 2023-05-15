@@ -1,9 +1,11 @@
+import getLatestId from "./getLatestId"
 
 function tasksReducer(tasks, action){
     switch(action.type){
         case "added":
+            // console.log("tasks no reducer:",tasks )
             return([...tasks,{
-                id:action.id,
+                id:getLatestId(tasks),
                 text: action.text,
                 done:false
             }])

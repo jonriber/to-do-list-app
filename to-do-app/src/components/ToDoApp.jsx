@@ -1,5 +1,5 @@
 import AddTask from "./AddTask"
-// import TaskList from "./TaskList"
+import TasksList from "./TasksList";
 import { TasksProvider } from "../contexts/TasksContext";
 
 const ToDoApp = () =>{
@@ -34,7 +34,7 @@ const ToDoApp = () =>{
             <TasksProvider>
                 <h3>Task App Example</h3>
                 <AddTask/>
-                {/* <TaskList /> */}
+                <TasksList />
             </TasksProvider>
             
         </>
