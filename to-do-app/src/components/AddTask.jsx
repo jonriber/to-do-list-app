@@ -5,9 +5,6 @@ const AddTask = () => {
     const 
         taskInputRef = useRef(""),
         dispatch = useTaskDispatch();
-        // tasks = useTaskContext(),
-        // id = getLatestId(tasks); //when is this calculated?
-
 
     function addTask(e){
         e.preventDefault();

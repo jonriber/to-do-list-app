@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-const Task = (props) => {
-    console.log("task final:",props)
+const Task = ({task}) => {
+    console.log("task final:",task)
     return(
         <>
             <li>
-                <h5>{props.task.text}</h5>
+                <h5>{task}</h5>
             </li>
         </>
     )

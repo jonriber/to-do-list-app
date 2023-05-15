@@ -3,12 +3,12 @@ import getLatestId from "./getLatestId"
 function tasksReducer(tasks, action){
     switch(action.type){
         case "added":
-            // console.log("tasks no reducer:",tasks )
-            return([...tasks,{
+            console.log("tasks no reducer:",tasks )
+            return[...tasks,{
                 id:getLatestId(tasks),
                 text: action.text,
                 done:false
-            }])
+            }]
         case "changed":
             return tasks.map((t) => {
                 if(t.id === action.task.id){

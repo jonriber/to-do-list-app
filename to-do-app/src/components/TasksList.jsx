@@ -4,19 +4,21 @@ import Task from "./Task"
 function TasksList(){
     const 
         tasks = useTaskContext(),
-        taskList = tasks.length>0? tasks.map((task) => {
+        taskList = tasks.map((task) => {
             return(
                 <>
                     <Task task={task.text}/>
                 </>
             )
-        }): <h3>Start adding tasks!</h3>
+        });
     
     console.log("TASKS ON TAKS LIST:",tasks);
     return(
         <>
             <ul>
-                {taskList}
+                {tasks.length >0 ?
+                taskList:
+                null}
             </ul>
         </>
     )

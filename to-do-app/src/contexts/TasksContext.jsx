@@ -4,7 +4,7 @@ import { createContext, useReducer,useContext } from "react"
 import tasksReducer from "../reducers/TasksReducer";
 // import initialTasks from "../reducers/initialTasks";
 
-export const TasksContext = createContext(null);
+export const TasksContext = createContext([]);
 
 export const TasksDispatchContext = createContext(null);
 
