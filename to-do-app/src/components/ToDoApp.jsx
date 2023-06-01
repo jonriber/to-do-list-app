@@ -2,6 +2,7 @@ import AddTask from "./AddTask"
 import TasksList from "./TasksList";
 import { TasksProvider } from "../contexts/TasksContext";
 import Test from "./Test";
+import Parent from "./Test2";
 
 const ToDoApp = () =>{
     // function handlerChangeTask(task){
@@ -25,6 +26,7 @@ const ToDoApp = () =>{
                 <AddTask/>
                 <TasksList />
                 <Test />
+                <Parent />
             </TasksProvider>
             
         </>
