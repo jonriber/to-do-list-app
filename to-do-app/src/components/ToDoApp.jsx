@@ -19,13 +19,18 @@ const ToDoApp = () =>{
     //     })
     // }
     // changeTaskHandler={handlerChangeTask} deleteTaskHandler={handlerDeleteTask}
+    const data = {
+        apple:1,
+        mango:2,
+        banana:3
+    }
     return(
         <>
             <TasksProvider>
                 <h3>Task App Example</h3>
                 <AddTask/>
                 <TasksList />
-                <Test />
+                <Test {...data}/>
                 <Parent />
             </TasksProvider>
             

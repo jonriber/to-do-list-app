@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import {  useEffect, useRef } from "react"
 
-const Test = () => {
+const Test = (data) => {
+    console.log("data:",data)
 
     // const [counter,useCounter] = useState("")
     const testImages = ["https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Ffotos-vetores-gratis%2Ffundo&psig=AOvVaw3Az-Csj7jZVzfdu2ZGOmFU&ust=1685377566324000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLDnmOu2mP8CFQAAAAAdAAAAABAE"]
